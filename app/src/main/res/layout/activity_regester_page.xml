@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#80A3FD"
+    tools:context=".Login_page">
+
+
+    <ImageView
+        android:id="@+id/MovieImage"
+        android:layout_width="460dp"
+        android:layout_height="153dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/cinema" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="348dp"
+        android:layout_height="500dp"
+        android:layout_marginBottom="-20dp"
+        app:cardCornerRadius="28dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/MovieImage">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="550dp"
+            android:background="#FEFEFE"
+            android:orientation="vertical"
+            android:padding="28dp">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Welcome"
+                android:textAlignment="center"
+                android:textColor="#8591F6"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enter Your Info To Sign Up"
+                android:textAlignment="center"
+                android:textColor="#101010" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="60dp" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="User Name"
+                android:textColor="#636161"
+                android:textStyle="normal|bold" />
+
+            <EditText
+                android:id="@+id/RegisterUserName"
+                android:layout_width="356dp"
+                android:layout_height="47dp"
+                android:ems="10"
+                android:inputType="text" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="30dp" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Email Address"
+                android:textColor="#636161"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/RegisterEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textEmailAddress" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="25dp" />
+
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Password"
+                android:textColor="#636161"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/RegisterPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPassword" />
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="15dp" />
+
+            <Button
+                android:id="@+id/SignUpRegisterPage"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/button_background1"
+                android:text="Sign Up"
+                android:textColor="#F4F4F4" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

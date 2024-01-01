@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00DDD5D5"
+    tools:context=".display_page">
+
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="135dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="8dp"
+        android:text="Dive into Drama,  Comedy , mystery , SCI-FI  and all that is Thrilling "
+        app:layout_constraintBottom_toTopOf="@+id/showsDisplayPage"
+        app:layout_constraintEnd_toStartOf="@+id/imageView3"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/LogOutDisplayPage"
+        android:layout_width="196dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="107dp"
+        android:layout_marginEnd="108dp"
+        android:layout_marginBottom="48dp"
+        android:background="@drawable/button_background2"
+        android:text="LOG Out"
+        android:textColor="#858484"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/MovieDisplayPage"
+        android:layout_width="143dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="68dp"
+        android:background="@drawable/button_background3"
+        android:text="     Movie List   "
+        android:textAlignment="textStart"
+        android:textColor="#E1D2D3"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/imageView3"
+        app:layout_constraintStart_toEndOf="@+id/imageView6" />
+
+    <Button
+        android:id="@+id/showsDisplayPage"
+        android:layout_width="130dp"
+        android:layout_height="65dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="164dp"
+        android:background="@drawable/button_background3"
+        android:text="     Show List  "
+        android:textAlignment="textStart"
+        android:textColor="#E1D2D3"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageView3" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="208dp"
+        android:layout_height="222dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintEnd_toStartOf="@+id/textView10"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView9"
+        app:srcCompat="@drawable/movie_watch" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="237dp"
+        android:layout_height="218dp"
+        android:layout_marginBottom="164dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/tv_watch" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="134dp"
+        android:layout_height="84dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="24dp"
+        android:text="Where Every Frame Tells a Story: Your Ultimate Movie Journey! "
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView9" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="Done Scrolling "
+        android:textColor="#404040"
+        app:layout_constraintBottom_toTopOf="@+id/LogOutDisplayPage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="333dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="6dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/img_3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
